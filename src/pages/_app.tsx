@@ -4,7 +4,6 @@ import { initializeFirebaseApp } from '@src/lib/firebase/firebase'
 import { getApp } from 'firebase/app'
 initializeFirebaseApp()
 function MyApp({ Component, pageProps }: AppProps) {
-  console.log(getApp())
   return (
     <ChakraProvider>
       <Component {...pageProps} />
